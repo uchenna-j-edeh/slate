@@ -2,16 +2,17 @@
 title: API Reference
 
 language_tabs: # must be one of https://git.io/vQNgJ
-  - shell
-  - ruby
-  - python
-  - javascript
+  - shell: cURL
+  - ruby: Ruby
+  - php: PHP
 
 toc_footers:
   - <a href='#'>Sign Up for a Developer Key</a>
+  - <a href='https://github.com/acme'>Client libraries</a>
   - <a href='https://github.com/tripit/slate'>Documentation Powered by Slate</a>
 
 includes:
+  - artists
   - errors
 
 search: true
@@ -161,8 +162,7 @@ let api = kittn.authorize('meowmeowmeow');
 let max = api.kittens.get(2);
 ```
 
-> The above command returns JSON structured like this:
-
+> A sample of the JSON you can expect is displayed below:
 ```json
 {
   "id": 2,
